@@ -1,0 +1,252 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0f1a;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+  background-color: #0b0d17;
+}
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 26px;
+  color: #3A5EFF;
+}
+.logo span {
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #c0c5e0;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #3A5EFF;
+}
+.btn-glow {
+  padding: 10px 20px;
+  background-color: #3A5EFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #3A5EFF, 0 0 20px #3A5EFF50;
+  transition: 0.3s;
+}
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #3A5EFF;
+  color: #3A5EFF;
+  border-radius: 10px;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background-color: #3A5EFF;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 10%;
+  gap: 50px;
+  background: radial-gradient(circle at top left, #1a1c2e 0%, #0d0f1a 100%);
+}
+.hero-content {
+  max-width: 50%;
+}
+.hero-content h1 {
+  font-size: 48px;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 17px;
+  color: #aeb3d2;
+  margin-bottom: 30px;
+}
+.hero-image img {
+  width: 480px;
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(58, 94, 255, 0.3);
+}
+
+/* Section Base */
+.section {
+  padding: 70px 10%;
+  text-align: center;
+}
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #3A5EFF;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.card {
+  background-color: #1c1e2f;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(58, 94, 255, 0.1);
+}
+.card h3 {
+  color: #3A5EFF;
+  margin-bottom: 10px;
+}
+.card p {
+  color: #bbb;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(58, 94, 255, 0.2);
+  }
+  /* Testimonials */
+.testimonials .testimonial-box {
+  background-color: #1a1c2e;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(58, 94, 255, 0.1);
+}
+.testimonial-box span {
+  color: #7a81a3;
+  font-size: 14px;
+}
+
+/* Team Section */
+.team-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team-box img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(58, 94, 255, 0.4);
+}
+.team-box h3 {
+  color: #3A5EFF;
+  margin-bottom: 10px;
+}
+.team-box p {
+  max-width: 500px;
+  color: #bbb;
+  line-height: 1.6;
+}
+.founder-quote blockquote {
+  font-style: italic;
+  color: #aeb3d2;
+  margin-top: 25px;
+  padding-left: 15px;
+  border-left: 4px solid #3A5EFF;
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.skills {
+  margin-top: 25px;
+}
+.skills h4 {
+  color: #3A5EFF;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.skills p {
+  color: #aeb3d2;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hire-me {
+  margin-top: 25px;
+}
+.btn-hire {
+  display: inline-block;
+  background: #3A5EFF;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 0 15px rgba(58, 94, 255, 0.5);
+  transition:background 0.3s ease, transform 0.3s ease;
+}
+.btn-hire:hover {
+  background: #2f4fd6;
+  transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 40px 10%;
+  background:   #0d0f1a, #1c1e2f
+}
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0b0d17;
+  padding: 50px 10%;
+  color: #aeb3d2;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.footer h4 {
+  color: #3A5EFF;
+  margin-bottom: 10px;
+}
+.footer p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.footer .copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+} 
